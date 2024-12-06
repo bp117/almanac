@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Banker Almanac</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="search.html">Search</a>
+    </nav>
+  </header>
+  <main>
+    <h2 id="bankName">Bank Name</h2>
+    <div class="tabs">
+      <button class="tab-button active" onclick="showTab('details')">Details</button>
+      <button class="tab-button" onclick="showTab('correspondents')">Correspondents/SI</button>
+      <button class="tab-button" onclick="showTab('offices')">Other Offices</button>
+      <button class="tab-button" onclick="showTab('about')">About</button>
+    </div>
+  
+    <div id="details" class="tab-content active">
+      <p><strong>Location:</strong> <span id="bankLocation"></span></p><br/>
+      <p><strong>Contact:</strong> <span id="bankContact"></span></p><br/>
+      <p><strong>Assets:</strong> <span id="bankAssets"></span></p><br/>
+      <p>
+        Global Bank operates in over 50 countries, offering financial services across retail, corporate,
+        and investment banking. The bank has a legacy of innovation in the financial industry.
+      </p><p>
+        Global Bank was established in 1850 and has become a leader in global banking. Its mission is to
+        connect people and companies to the financial tools they need to succeed.
+      </p><p>
+        Global Bank was established in 1850 and has become a leader in global banking. Its mission is to
+        connect people and companies to the financial tools they need to succeed.
+      </p><p>
+        Global Bank was established in 1850 and has become a leader in global banking. Its mission is to
+        connect people and companies to the financial tools they need to succeed.
+      </p><p>
+        Global Bank was established in 1850 and has become a leader in global banking. Its mission is to
+        connect people and companies to the financial tools they need to succeed.
+      </p><p>
+        Global Bank was established in 1850 and has become a leader in global banking. Its mission is to
+        connect people and companies to the financial tools they need to succeed.
+      </p><p>
+        Global Bank was established in 1850 and has become a leader in global banking. Its mission is to
+        connect people and companies to the financial tools they need to succeed.
+      </p><p>
+        Global Bank was established in 1850 and has become a leader in global banking. Its mission is to
+        connect people and companies to the financial tools they need to succeed.
+      </p>
+    </div>
+  
+    <div id="correspondents" class="tab-content">
+      <h3>Correspondents/SI</h3>
+      <ul>
+        <li>HSBC</li>
+        <li>Barclays</li>
+        <li>Deutsche Bank</li>
+        <li>Citibank</li>
+        <li>Standard Chartered</li>
+      </ul>
+    </div>
+  
+    <div id="offices" class="tab-content">
+      <h3>Other Offices</h3>
+      <ul>
+        <li>Los Angeles, USA</li>
+        <li>Chicago, USA</li>
+        <li>Paris, France</li>
+        <li>Tokyo, Japan</li>
+        <li>Sydney, Australia</li>
+      </ul>
+    </div>
+  
+    <div id="about" class="tab-content">
+      <h3>About</h3>
+      <p>
+        Global Bank was established in 1850 and has become a leader in global banking. Its mission is to
+        connect people and companies to the financial tools they need to succeed.
+      </p><p>
+        Global Bank was established in 1850 and has become a leader in global banking. Its mission is to
+        connect people and companies to the financial tools they need to succeed.
+      </p><p>
+        Global Bank was established in 1850 and has become a leader in global banking. Its mission is to
+        connect people and companies to the financial tools they need to succeed.
+      </p><p>
+        Global Bank was established in 1850 and has become a leader in global banking. Its mission is to
+        connect people and companies to the financial tools they need to succeed.
+      </p><p>
+        Global Bank was established in 1850 and has become a leader in global banking. Its mission is to
+        connect people and companies to the financial tools they need to succeed.
+      </p>
+    </div>
+  
+    <div id="bicCodesTable">
+      <h3>BIC Codes</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>BIC</th>
+            <th>Branch</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody id="bicTableBody">
+          <!-- Example Mock Data -->
+          <tr><td>GLBNUS01</td><td>Main Office</td><td>USA</td></tr>
+          <tr><td>GLBNUS02</td><td>West Coast</td><td>USA</td></tr>
+          <tr><td>GLBNJP01</td><td>Tokyo Office</td><td>Japan</td></tr>
+          <tr><td>GLBNFR01</td><td>Paris Branch</td><td>France</td></tr>
+          <tr><td>GLBNAU01</td><td>Sydney HQ</td><td>Australia</td></tr>
+          <!-- Add many more rows to enforce scrolling -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Banker Almanac. All rights reserved.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

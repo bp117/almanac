@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Banks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Banker Almanac</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="search.html">Search</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Search Banks</h2>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search by bank name or location">
+      <button id="searchBtn">Search</button>
+    </div>
+    <div id="searchResults"></div>
+    <div id="defaultBanks">
+      <h3>Explore Popular Banks</h3>
+      <ul>
+        <li onclick="viewProfile('Global Bank')">Global Bank</li>
+        <li onclick="viewProfile('Continental Bank')">Continental Bank</li>
+        <li onclick="viewProfile('Pacific Bank')">Pacific Bank</li>
+        <li onclick="viewProfile('Regional Bank')">Regional Bank</li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Banker Almanac. All rights reserved.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
